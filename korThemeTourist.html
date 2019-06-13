@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            max-width: 1500px;
+            margin: 0 auto;
+            padding: 0px;
+            list-style-type: none;
+        }
+
+        header>div>p {
+            float: right;
+            margin-top: 20px;
+            margin-right: 300px;
+        }
+
+        .loginMenu span:hover {
+            padding: 5px;
+            color: rgb(110, 197, 139);
+        }
+
+        header>a>img {
+            margin-top: 40px;
+            margin-left: 250px;
+        }
+
+        nav {
+            margin-top: 10px;
+            background-color: rgb(110, 197, 139);
+            height: 50px;
+        }
+
+        nav ul {
+            color: white;
+            padding-top: 10px;
+            margin-left: 220px;
+            font-size: 20px;
+        }
+
+        nav ul li {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        .dropdown {
+            display: inline-block;
+        }
+
+        .dropdownContents {
+            display: none;
+            background-color: rgb(110, 197, 139);
+            position: absolute;
+            width: 150px;
+            padding: 12px 16px;
+
+        }
+
+        .dropdown ul:hover .dropdownContents {
+            display: block;
+        }
+
+        section {
+            margin-bottom: 5%;
+        }
+
+
+        a:link,
+        a:visited,
+        a:hover {
+            color: white;
+            text-decoration: none;
+        }
+
+        .loginMenu a {
+            color: black;
+        }
+
+        .tourist {
+            margin-top: 30px;
+        }
+
+        .search {
+            color: white;
+            margin-top: 30px;
+            background-color: rgb(58, 196, 104);
+            padding-top: 15px;
+            padding-left: 10px;
+            height: 40px;
+            border-radius: 10px;
+        }
+
+        .secdiv {
+            margin-left: 30px;
+            margin-top: 30px;
+        }
+
+        .secdiv img,
+        .secdiv p {
+            display: inline-block;
+            position: relative;
+            transition: 2s;
+        }
+
+        .secdiv img:hover {
+            width: 200px;
+            height: 200px;
+        }
+
+        .secdiv p:nth-of-type(1) {
+            margin-left: 20px;
+            position: absolute;
+        }
+
+        .secdiv p:nth-of-type(2) {
+            margin-left: 20px;
+            margin-top: 30px;
+            position: absolute;
+        }
+
+        .secdiv p:nth-of-type(3) {
+            margin-left: 20px;
+            margin-top: 60px;
+            position: absolute;
+        }
+
+        .secdiv p:nth-of-type(4) {
+            margin-left: 20px;
+            margin-top: 90px;
+            position: absolute;
+        }
+
+        .secdiv hr {
+            margin-top: 20px;
+        }
+
+        footer {
+            border: 1px solid #000000;
+            margin-top: 30px;
+            padding-top: 20px;
+            padding-left: 10%;
+        }
+
+        footer img {
+            display: inline-block;
+        }
+
+        footer p:nth-of-type(1),
+        footer p:nth-of-type(2) {
+            position: absolute;
+            display: inline-block;
+        }
+
+        footer p:nth-of-type(2) {
+            margin-top: 25px;
+        }
+
+        footer p:nth-of-type(3) {
+            position: absolute;
+            display: inline-block;
+            margin-top: 50px;
+        }
+
+        .h3text {
+            margin-top: 30px;
+            margin-bottom: 10px;
+            margin-left: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="loginMenu">
+            <p><a href="index.html"><span>Home</span></a> | <a href="login.html"><span>Login</span></a> |
+                <span>MyPage</span></p>
+        </div>
+        <a class="imgbtn" href="./index.html"><img src="./img/headerimg.PNG" alt=""></a>
+
+    </header>
+
+    <nav>
+        <div class="dropdown">
+            <ul>
+                여행정보
+                <div class="dropdownContents">
+                    <a href="TouristAtt.html">
+                        <li>관광명소</li>
+                    </a>
+                    <li>지역행사</li>
+                    <li>특가할인</li>
+                </div>
+        </div>
+        </ul>
+
+        <div class="dropdown">
+            <ul>
+                국내여행
+                <div class="dropdownContents">
+                    <a href="./korThemeTourist.html">
+                        <li>국내 테마여행</li>
+                    </a>
+                    <li>국내 지역여행</li>
+                </div>
+        </div>
+        </ul>
+
+        <div class="dropdown">
+            <ul>
+                해외여행
+                <div class="dropdownContents">
+                    <li>해외 축제</li>
+                    <li>해외 지역여행</li>
+                </div>
+        </div>
+        </ul>
+
+        <div class="dropdown">
+            <ul>
+                패키지여행
+                <div class="dropdownContents">
+                    <a href="./korPakage.html">
+                        <li>국내 패키지</li>
+                    </a>
+                    <li>해외 패키지</li>
+                </div>
+        </div>
+        </ul>
+    </nav>
+
+    <p class="tourist">● 국내여행 > 국내 테마여행</p>
+
+    <div class="search">
+        <p>국내 테마여행이 3건 조회되었습니다.</p>
+    </div>
+        
+    <section>
+        <div class="secdiv">
+            <img src="./img/korThemeTouristimg1.PNG" alt="" width="100" height="100">
+
+            <p>[경기도 용인] [식물 카페 여행] 알렉스 더 커피</p>
+            <p>설명 : 식물과 함께 커피를 마실 수 있는 공간</p>
+            <p>전체 창이 유리로 되어 있어서 밝은 햇빛이 들어옵니다.</p>
+            <p>1층은 레스토랑, 2층은 리빙숍, 3층은 유리온실로 되어 있어 식사부터 디저트 쇼핑까지 모두 가능합니다.</p>
+
+            <hr>
+        </div>
+
+        <div class="secdiv">
+            <img src="./img/korThemeTouristimg2.PNG" alt="" width="100" height="100">
+
+            <p>[강원도 춘천] [목장 체험] 해피초원목장</p>
+            <p>설명 : 푸르른 나무들 사이로 귀여운 토끼들과 염소들, 양들까지 만날 수 있는 곳</p>
+            <p>산책로를 따라 정상에 오르면 스위스에 온 것 같은 느낌을 받을 수 있는 곳입니다.</p>
+
+            <hr>
+        </div>
+
+        <div class="secdiv">
+            <img src="./img/korThemeTouristimg3.PNG" alt="" width="100" height="100">
+    
+            <p>[경기도 연천] [테마 공원] 허브빌리지</p>
+            <p>설명 : 허브빌리지와 자연 폭포 경관 등을 모두 구경할 수 있는 곳</p>
+            <p>6월 16일까지 라벤더 축제가 열리고 있습니다.</p>
+            <p>허브빌리지를 본 이후에는 주상절리 절벽과 재인폭포도 가보세요!</p>
+    
+            <hr>
+        </div>
+    </section>
+
+    <footer>
+        <img src="./img/headerimg.PNG" alt="">
+        <p>회사명 : (주) 여행주간 | 대표자 : 여행자 | 전화 : 1588-1234</p>
+        <p>주소 : 서울특별시 구로구 디지털로 27길 21, 1011호</p>
+        <p>사업자등록번호 : 701-81-00330</p>
+    </footer>
+</body>
+
+</html>

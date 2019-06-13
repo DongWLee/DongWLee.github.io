@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            max-width: 1500px;
+            margin: 0 auto;
+            padding: 0px;
+            list-style-type: none;
+        }
+
+        header > div > p {
+            float: right;
+            margin-top: 20px;
+            margin-right: 300px;
+        }
+
+        .loginMenu span:hover {
+            padding: 5px;
+            color: rgb(110, 197, 139);
+        }
+
+        header> a > img {
+            margin-top: 40px;
+            margin-left: 250px;
+        }
+
+        header > a > img:hover {
+            transition: 2s;
+        	transform: rotate(360deg);
+        }
+
+        nav {
+            margin-top: 10px;
+            background-color: rgb(110, 197, 139);
+            height: 50px;
+        }
+
+        nav ul {
+            color: white;
+            padding-top: 10px;
+            margin-left: 220px;
+            font-size: 20px;
+        }
+
+        nav ul li {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        .dropdown {
+            display: inline-block;
+        }
+
+        .dropdownContents {
+            display: none;
+            background-color: rgb(110, 197, 139);
+            position: absolute;
+            width: 150px;
+            padding: 12px 16px;
+
+        }
+
+        .dropdown ul:hover .dropdownContents {
+            display: block;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        a:link, a:visited, a:hover { color: white; text-decoration: none;}
+
+        .loginMenu a {
+            color: black;
+        }
+
+        footer {
+            border: 1px solid #000000;
+            margin-top: 30px;
+            padding-top: 20px;
+            padding-left: 10%;
+        }
+
+        footer img {
+            display: inline-block;
+        }
+
+        footer p:nth-of-type(1), footer p:nth-of-type(2) {
+            position: absolute;
+            display: inline-block;
+        }
+
+        footer p:nth-of-type(2) {
+            margin-top: 25px;
+        }
+
+        footer p:nth-of-type(3) {
+            position: absolute;
+            display: inline-block;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="loginMenu">
+            <p><a href="index.html"><span>Home</span></a> | <a href="login.html"><span>Login</span></a> | <span>MyPage</span></p>
+        </div>
+        <a class="imgbtn" href="./index.html"><img src="./img/headerimg.PNG" alt=""></a>
+
+    </header>
+
+    <nav>
+            <div class="dropdown">
+                <ul>
+                    여행정보
+                    <div class="dropdownContents">
+                        <a href="TouristAtt.html"><li>관광명소</li></a>
+                        <li>지역행사</li>
+                        <li>특가할인</li>
+                    </div>
+            </div>
+            </ul>
+            
+            <div class="dropdown">
+                <ul>
+                    국내여행
+                    <div class="dropdownContents">
+                        <a href="./korThemeTourist.html"><li>국내 테마여행</li></a>
+                        <li>국내 지역여행</li>
+                    </div>
+            </div>
+            </ul>
+            
+            <div class="dropdown">
+                <ul>
+                    해외여행
+                    <div class="dropdownContents">
+                        <li>해외 축제</li>
+                        <li>해외 지역여행</li>
+                    </div>
+            </div>
+            </ul>
+            
+            <div class="dropdown">
+                <ul>
+                    패키지여행
+                    <div class="dropdownContents">
+                        <a href="./korPakage.html"><li>국내 패키지</li></a>
+                        <li>해외 패키지</li>
+                    </div>
+            </div>
+            </ul>
+    </nav>
+
+    <section>
+        <img src="./img/section1.PNG" alt="" height="300" width="1500">
+    </section>
+
+    <section>
+        <img src="./img/section2.PNG" alt="" height="500" width="1500">
+    </section>
+
+    <aside>
+
+    </aside>
+
+    <footer>
+        <img src="./img/headerimg.PNG" alt="">
+        <p>회사명 : (주) 여행주간 | 대표자 : 여행자 | 전화 : 1588-1234</p>
+        <p>주소 : 서울특별시 구로구 디지털로 27길 21, 1011호</p>
+        <p>사업자등록번호 : 701-81-00330</p>
+    </footer>
+</body>
+
+</html>
